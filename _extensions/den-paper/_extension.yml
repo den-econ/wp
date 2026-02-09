@@ -18,13 +18,8 @@ contributes:
       # PDF engine settings
       pdf-engine: lualatex
       
-      # Citation settings using biblatex
+      # Citation settings - use biblatex (options defined in den.cls)
       cite-method: biblatex
-      biblatexoptions:
-        - backend=biber
-        - style=numeric
-        - maxbibnames=10
-        - sorting=none
       
       # Default format options
       keep-tex: true

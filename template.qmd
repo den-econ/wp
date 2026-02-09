@@ -3,22 +3,11 @@ title: "User Guide for the DEN Paper Template"
 format: den-paper-pdf
 
 # Manuscript settings
-manuscript: article  # article, rescience, data, software, editorial, proceedings, poster
+manuscript: article 
 layout: publish     # preprint or publish
 year: 2026
 volume: 1
-
-# DOI and publication info (for published layout)
-doi: "xx.xxxxx/den.xxxx.xxxx"
-received: "1 April 2026"
-revised: "1 May 2026"
-accepted: "10 May 2026"
 published: "20 May 2026"
-paper-editor: "Editor Name"
-paper-reviewers: "First Reviewer, Second Reviewer, Third Reviewer"
-
-# Conference info (for proceedings/poster manuscripts)
-conference: "Conference Title"
 
 # Authors
 author:
@@ -27,6 +16,7 @@ author:
     affiliations:
       - name: "Institution-1, City, Country"
     email: "correspondence@email.domain"
+    corresponding: true
   - name: "Second Author"
     orcid: "0000-0000-0000-0000"
     affiliations:
@@ -50,12 +40,14 @@ abstract: |
   brief summary of your interpretations and conclusions.
 
 # Bibliography file
-bibliography: bibliography.bib
+bibliography: ref.bib
+csl: csl.csl
+citation: true
 ---
 
 # User Guide for This Template
 
-**DO NOT submit papers containing LaTeX error messages.** If you see any error messages, please fix them before submission.
+Use this template with Quarto markdown (qmd). For more information on Quarto, visit <https://quarto.org> [here](https://quarto.org/docs/authoring/markdown-basics.html#footnotes).
 
 ## Title
 
@@ -63,11 +55,13 @@ The title should be in Title Case. Keep it concise and informative, ideally with
 
 ## References
 
-Add your bibliography entries to `bibliography.bib` and cite them using standard Quarto citation syntax. Here is an example citation on diamond open access [@fuchs2013diamond]. Since many of you are using the OpenSky data, here is another example [@schafer2014bringing].
+Add your bibliography entries to `ref.bib` and cite them using standard Quarto citation syntax. Here is an example citation on diamond open access [@fuchs2013diamond]. According to @fuchs2013diamond, diamond open access model is amazing.
 
 ## Footnotes
 
-Use footnotes sparingly. They should be used for additional information that is not essential to the main text.^[This is an example footnote that works.]
+Use footnotes sparingly. They should be used for additional information that is not essential to the main text.[^1]
+
+[^1]: This is an example footnote.
 
 ## Tables
 
@@ -85,7 +79,7 @@ Use standard markdown tables or Quarto's table syntax. @tbl-example shows an exa
 
 ## Figures
 
-Use standard Quarto figure syntax with `![caption](path){#fig-id width=X%}`. Place images in a `figures/` folder.
+Use standard Quarto figure syntax with `![caption](path){#fig-id width=X%}`. Place images in a `fig/` folder.
 
 ## Equations
 
@@ -111,23 +105,9 @@ Some standard sections are:
 
 Include your acknowledgements in this section.
 
-# Author Contributions {.unnumbered}
-
-If the paper has more than one author, the CRediT section must be included. See example usage at <https://casrai.org/credit/>
-
-- First Author: Conceptualization, Data Curation, Formal Analysis
-- Second Author: Data Curation, Writing - Original Draft
-- Third Author: Visualization, Investigation
-
 # Funding Statement {.unnumbered}
 
 When applicable, please specify the funding information for this research.
-
-# Open Data Statement {.unnumbered}
-
-**Mandatory section!**
-
-Include DOI and a short description of supplementary data.
 
 # Reproducibility Statement {.unnumbered}
 

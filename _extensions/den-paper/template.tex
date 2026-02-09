@@ -43,6 +43,15 @@ $if(bibliography)$
 \addbibresource{$bibliography$}
 $endif$
 
+% Strip abstract fields from bibliography entries (prevents LuaLaTeX parsing issues)
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+      \step[fieldset=abstract, null]
+    }
+  }
+}
+
 % Title
 \title{$title$}
 
@@ -77,6 +86,25 @@ $endif$
 
 % Support for graphics
 \RequirePackage{graphicx}
+
+% Support for ding symbols (checkmarks, etc.)
+\RequirePackage{pifont}
+
+% Support for table column width calculations (required by Quarto-generated tables)
+\RequirePackage{calc}
+
+% Pandoc image handling - required for newer Pandoc/Quarto versions
+% Constrains images to text width to prevent overflow
+\makeatletter
+\providecommand{\pandocbounded}[1]{%
+  \sbox0{#1}%
+  \ifdim\wd0>\linewidth
+    \resizebox{\linewidth}{!}{#1}%
+  \else
+    #1%
+  \fi
+}
+\makeatother
 
 % CSL references support
 $if(csl-refs)$
