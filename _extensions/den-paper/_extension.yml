@@ -18,8 +18,8 @@ contributes:
       # PDF engine settings
       pdf-engine: lualatex
       
-      # Citation settings - use biblatex (options defined in den.cls)
-      cite-method: biblatex
+      # Citation settings - use citeproc so `csl:` in document metadata is applied
+      cite-method: citeproc
       
       # Default format options
       keep-tex: true
@@ -28,8 +28,8 @@ contributes:
       fig-pos: "htbp!"
       tbl-cap-location: top
       
-      # Cross-reference settings
-      crossref:
-        fig-prefix: "Figure"
-        tbl-prefix: "Table"
-        eq-prefix: "Equation"
+      # # Cross-reference settings
+      # crossref:
+      #   fig-prefix: "Figure"
+      #   tbl-prefix: "Table"
+      #   eq-prefix: "Equation"
