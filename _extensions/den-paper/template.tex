@@ -157,6 +157,13 @@ $endfor$
   \end{flushright}%
 }
 
+% Allow URLs in bibliography to break across lines at any character.
+% \UrlOrds adds break opportunities after all ordinary characters so long
+% URLs (DOIs, web links) do not overflow the right margin.
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+\makeatother
+
 % Allow LaTeX more flexibility in line breaking to prevent overflow
 % (needed for Indonesian/non-English text on narrow B5 paper)
 \tolerance=1000
