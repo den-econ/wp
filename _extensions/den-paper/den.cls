@@ -1296,7 +1296,7 @@
   {}{}
 }
 
-\def\cup@journal@name{Naskah Kebijakan}
+\def\cup@journal@name{DEN Working Paper}
 
 \geometry{
   b5paper,
