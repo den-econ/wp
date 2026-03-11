@@ -28,8 +28,8 @@ contributes:
       fig-pos: "htbp!"
       tbl-cap-location: top
       
-      # # Cross-reference settings
-      # crossref:
-      #   fig-prefix: "Figure"
-      #   tbl-prefix: "Table"
-      #   eq-prefix: "Equation"
+      # Cross-reference settings
+      crossref:
+        fig-prefix: "Figure"
+        tbl-prefix: "Table"
+        eq-prefix: "Equation"

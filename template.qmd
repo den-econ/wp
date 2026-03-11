@@ -40,9 +40,16 @@ abstract: |
   brief summary of your interpretations and conclusions.
 
 # Bibliography file
+lang: id
 bibliography: ref.bib
 csl: csl.csl
 citation: true
+crossref: # turn off if you write in english
+  fig-title: Gambar
+  tbl-title: Tabel
+  fig-prefix: Gambar
+  tbl-prefix: Tabel
+  eq-prefix: Persamaan
 ---
 
 # User Guide for This Template

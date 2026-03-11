@@ -194,7 +194,7 @@
   articletitle,
   super,
   dates,
-%  copyright,
+  copyright,
   abbreviations,
   keywords,
 }
