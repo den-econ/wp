@@ -31,6 +31,11 @@ keywords:
   - keyword-two
   - keyword number three
 
+# JEL classification codes (optional; see https://www.aeaweb.org/jel/guide/jel.php)
+jel:
+  - C22
+  - O47
+
 # Abstract (300 words or fewer)
 abstract: |
   An abstract summarizes, in one paragraph of 300 words or fewer, the major 
