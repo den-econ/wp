@@ -65,6 +65,29 @@ The template produces a PDF formatted for DEN Working Papers with:
 - Automatic bibliography formatting
 - Support for figures, tables, and equations
 
+## MS Word template (Naskah Kebijakan)
+
+For writing directly in MS Word — no Quarto involved — use the standalone
+Word template in `docx/`:
+
+- `docx/naskah-kebijakan-template.dotx` — double-click to start a new
+  document (Word template file).
+- `docx/naskah-kebijakan-template.docx` — the same template as a regular
+  document.
+
+It replicates the DEN house style (brief/Naskah Kebijakan layout) on A4:
+masthead with the DEN logo, shaded abstract box with Keywords/JEL, numbered
+headings in DEN blue, figure/table captions with auto-numbering (SEQ
+fields; select all and press F9 to renumber), Sumber notes, and running
+headers.
+
+Notes:
+
+- Manage citations with Zotero or Mendeley, using the same CSL style as
+  the PDF template (`csl.csl`).
+- To regenerate the template after style changes, run
+  `python docx/make_template.py` (requires `python-docx` and `pymupdf`).
+
 ## License
 
 This template is released under the LaTeX Project Public License v1.3c.

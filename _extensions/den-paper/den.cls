@@ -193,6 +193,8 @@
 \newcommand*\cup@manuscript@poster{poster}
 \newcommand*\cup@layout@preprint{preprint}
 \newcommand*\cup@layout@publish{publish}
+\newcommand*\cup@layout@brief{brief}
+\newif\ifcup@brief
 
 \setkeys{cup}{
   articletitle,
@@ -203,6 +205,13 @@
   keywords,
   jel,
 }
+% layout=brief produces a DEN Policy Brief (Naskah Kebijakan): identical to
+% the publish layout except for the masthead name and no copyright notice.
+\ifx \cup@layout \cup@layout@brief
+  \cup@brieftrue
+  \def\cup@layout{publish}
+  \cup@copyrightfalse
+\fi
 \RequirePackage{geometry}
 \RequirePackage{csquotes}
 \RequirePackage{changepage}
@@ -1317,7 +1326,11 @@
   {}{}
 }
 
-\def\cup@journal@name{DEN Working Paper}
+\ifcup@brief
+  \def\cup@journal@name{Naskah Kebijakan}
+\else
+  \def\cup@journal@name{DEN Working Paper}
+\fi
 
 \geometry{
   b5paper,

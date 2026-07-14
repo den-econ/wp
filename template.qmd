@@ -4,7 +4,7 @@ format: den-paper-pdf
 
 # Manuscript settings
 manuscript: article 
-layout: publish     # preprint or publish
+layout: publish     # preprint, publish, or brief (brief = Naskah Kebijakan policy brief)
 year: 2026
 volume: 1
 published: "20 May 2026"
