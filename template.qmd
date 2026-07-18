@@ -9,12 +9,23 @@ year: 2026
 volume: 1
 published: "20 May 2026"
 
+# Affiilations
+affiilations:
+  - id: den
+    url: https://dewanekonomi.go.id
+    name: "Dewan Ekonomi Nasional"
+#    name: "Nationa Economic Council, Republic of Indonesia"
+    address: "Jl. M.h. Thamrin No. 8"
+    postal-code: "10340"
+    city: "Jakarta"
+    country: "Indonesia"
+
 # Authors
 author:
-  - name: "First Author"
-    orcid: "0000-0000-0000-0000"
+  - name: "Krisna GUpta"
+    orcid: "0000-0001-8695-0514"
     affiliations:
-      - name: "Institution-1, City, Country"
+      - ref: den
     email: "correspondence@email.domain"
     corresponding: true
   - name: "Second Author"
