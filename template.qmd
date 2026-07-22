@@ -10,7 +10,7 @@ volume: 1
 published: "20 May 2026"
 
 # Affiilations
-affiilations:
+affiliations:
   - id: den
     url: https://dewanekonomi.go.id
     name: "Dewan Ekonomi Nasional"
