@@ -1,4 +1,5 @@
 ---
+# Use a concise title. Bahasa Indonesia default please!
 title: "User Guide for the DEN Paper Template"
 format: den-paper-pdf
 
@@ -6,7 +7,7 @@ format: den-paper-pdf
 manuscript: article 
 layout: publish     # preprint, publish, or brief (brief = Naskah Kebijakan policy brief)
 year: 2026
-volume: 1
+volume: 1           # Change the volume
 published: "20 May 2026"
 
 # Affiilations
@@ -67,6 +68,12 @@ crossref: # turn off if you write in english
   tbl-prefix: Tabel
   eq-prefix: Persamaan
 ---
+
+<!-- leave the callout as is -->
+
+::: {.callout-note}
+DEN Working Papers describe research in progress by the author(s) and are published to elicit comments and to encourage debate. The views expressed in DEN Working Papers are those of the author(s) and do not necessarily represent the views of the Dewan Ekonomi Nasional. 
+:::
 
 # User Guide for This Template
 
